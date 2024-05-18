@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página com Layout Especificado</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header, .footer {
+            width: 980px;
+            text-align: center;
+            line-height: 140px;
+        }
+
+        .footer {
+            line-height: 70px;
+            background-color: yellow;
+        }
+
+        .main {
+            display: flex;
+            width: 980px;
+        }
+
+        .sidebar {
+            width: 270px;
+            height: 450px;
+            background-color: blue;
+            margin: 15px 15px 15px 0;
+        }
+
+        .content {
+            width: 690px;
+            height: 450px;
+            background-color: purple;
+            margin: 15px 0 15px 15px;
+        }
+        .header {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Header</div>
+    <div class="main">
+        <div class="sidebar">Sidebar</div>
+        <div class="content">Content</div>
+    </div>
+    <div class="footer">Footer</div>
+</body>
+</html>
